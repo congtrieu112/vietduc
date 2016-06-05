@@ -31,6 +31,7 @@ a.navbar-brand.vd-logo img {
     height: 90px;
     z-index: 100;
     border-radius: 0;
+    position: relative;
 }
 .navbar-collapse.collapse.vd-nava-menu-header{
     margin-left: 135px;
@@ -619,3 +620,10 @@ li.vd-li-parent > a {
     color: #ec3237;
 }
 
+p.vd-phone-header {
+    position: absolute;
+    top: 30px;
+    right: 15%;
+    font-size: 20px;
+    color: #ec3237;
+}
