@@ -1,0 +1,540 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@font-face {
+    font-family: 'Avo-N';
+    src: url('../fonts/utm-avo.eot');
+    src: local('â˜º'), url('../fonts/utm-avo.woff') format('woff'), url('../fonts/utm-avo.ttf') format('truetype'), url('../fonts/utm-avo.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avo-N';
+    src: url('../fonts/utm-avobold.eot');
+    src: local('â˜º'), url('../fonts/utm-avobold.woff') format('woff'), url('../fonts/utm-avobold.ttf') format('truetype'), url('../fonts/utm-avobold.ttf') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TrebuchetMS';
+    src: url('../fonts/TrebuchetMS.eot');
+    src: url('../fonts/TrebuchetMS.eot') format('embedded-opentype'),
+    url('../fonts/TrebuchetMS.woff2') format('woff2'),
+    url('../fonts/TrebuchetMS.woff') format('woff'),
+    url('../fonts/TrebuchetMS.ttf') format('truetype'),
+    url('../fonts/TrebuchetMS.svg#TrebuchetMS') format('svg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.vd-container{
+    max-width: 940px;
+    z-index: 100;
+
+}
+a.navbar-brand.vd-logo img {
+    width: 130px;
+    margin-top: -15px;
+    border: 5px solid #fff;
+    box-shadow: 1px 0px 3px #fff;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.vd-menu {
+    background-color: #fff;
+    border: none;
+    box-shadow: 2px 0px 13px #000;
+    height: 90px;
+    z-index: 100;
+    border-radius: 0;
+}
+.navbar-collapse.collapse.vd-nava-menu-header{
+    margin-top: 35px;
+    margin-left: 205px;
+}
+.navbar-inverse .navbar-nav>li:first-child{
+    border-left:none;
+}
+.navbar-inverse .navbar-nav>li{
+    border-left: 1px solid #9d9d9d;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #000;
+    font-size: 18px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+
+}
+.nav>li>a{
+    padding:0 24px ;
+}
+.vd-menu-bottom .nav>li>a{
+    padding:0 45px ;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    color: #B2B935;
+    font-size: 18px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    color: #B2B935;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    /*text-shadow: 0px 0px 2px #B2B935;*/
+
+
+}
+.vd-slide {
+    margin-top: -18px;
+}
+.carousel-caption{
+    display: none;
+}
+.vd-caption {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 15%;
+    right: 25%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px;
+}
+.vd-caption h1{
+    color:#333333;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 60px;
+    kerning: 0;
+    font-weight: bold;
+}
+.vd-caption h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color:#333333;
+    kerning: 0;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.vd-caption p{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #9B9B9B;
+    kerning: 0;
+    letter-spacing: 0;
+}
+a.left.carousel-control{
+    left: 20%;
+    top: 50%;
+    background: url(../images/next-privew.png) 20px -7px no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    opacity: 1;
+
+}
+a.right.carousel-control {
+    right: 20%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    background: url(../images/next-privew.png) 13px -98px no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+a.left.carousel-control:hover {
+
+    background: url(../images/next-privew.png) 19px -187px no-repeat;
+    background-size: cover;
+}
+a.right.carousel-control:hover{
+    background: url(../images/next-privew.png) 13px -283px no-repeat;
+    background-size: cover;
+}
+.vd-button{
+    background-color: #B2B935;
+    padding: 14px 46px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.vd-button:hover .carousel-control.left:hover{
+   background-color: #000000;
+}
+.btn-success:hover{
+    background-color: #000000;
+    border: none;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+    /*display: none;*/
+}
+.vd-menu-bottom{
+    height: 75px;
+    background-color: #B2B935;
+    border: none;
+    border-radius: 0;
+}
+.navbar-default .navbar-nav>li:first-child{
+    border-left: none;
+}
+.navbar-default .navbar-nav>li{
+    border-left: 1px solid #707421;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 75px;
+    line-height: 82px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 75px;
+    line-height: 82px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a>i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+#vd-content-one i,#vd-content-two i,#vd-content-three i{
+    color: #B2B935;
+}
+.vd-title h1{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.vd-lock-left .vd-title h1 a{
+  color:#FFFEFB ;
+}
+.vd-title h1 a{
+    color: #333;
+    text-decoration: none;
+}
+hr{
+    margin: 10px 0;
+}
+h2.title-lock {
+    color: #B2B935;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    line-height: 20px;
+}
+p.vd-description {
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    margin-bottom: 10px;
+}
+.vd-info {
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #B2B935 !important;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 10px;
+    float: left;
+}
+img.vd-img-lock{
+    border-radius: 5px;
+}
+#vd-content-two i{
+    color: #B2B935;
+}
+#vd-content-two ul {
+    list-style-type: upper-roman;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #9B9B9B;
+    font-size: 14px;
+
+}
+
+/*img.vd-list {*/
+    /*padding: 2px;*/
+    /*width: 33%;*/
+/*}*/
+
+.vd-lock-left p{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #FBFFAE;
+}
+.vd-list-galegry img {
+    width: 32%;
+    margin-bottom: 3px;
+    height: 58px;
+}
+.vd-lock-left {
+    background-color: #B2B935;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: 13px;
+}
+.vd-lock-left .vd-title{
+    text-align: center;
+
+}
+.vd-contact-address{
+    font-size: 16px;
+    color: #B2B935;
+    font-weight: bold;
+}
+.vd-contact-address-nd{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    color: #9B9B9B;
+}
+
+footer {
+
+    background-color: #2A2924;
+    min-height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+}
+.vd-h60{
+    height: 62px;
+}
+.clear-all{
+    margin: 0;
+    padding: 0;
+}
+.vd-footer-left{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+.vd-submit-footer,.vd-submit-footer:hover,.vd-submit-footer:focus,.vd-submit-footer:active,.vd-submit-footer:visited{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #9B9B9B;
+}
+.vd-submit-footer:hover{
+    color: #ffffff;
+}
+.vd-list-galegry {
+    text-align: center;
+}
+.vd-icon-face,.vd-icon-twitter,.vd-icon-pinterest{
+    width: 38px;
+    height: 38px;
+    background: url("../images/icon00.png") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin: 10px 2px;
+}
+.vd-icon-twitter{
+    background: url("../images/icon01.png") no-repeat;
+}
+.vd-icon-printerest{
+    background: url("../images/icon02.png") no-repeat;
+}
+.clear-l{
+    margin-left: 0;
+    padding-left: 0;
+}
+.clear-r{
+    margin-right: 0;
+    padding-right: 0;
+}
+.vd-ab-top-left{
+    float: left;
+    margin-right: 20px;
+}
+.vd-ab-list{
+    list-style-image: url("../images/marker.png");
+    margin-left: 15px;
+}
+.vd-ab-list a{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #B2B935;
+    font-size: 14px;
+    line-height: 24px;
+}
+.vd-ab-list a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.vd-ab-content{
+    margin-top: 60px;
+}
+.vd-ab-surrounded{
+ margin-top: 20px;
+    padding-right: 10px;
+}
+.vd-ab-team-title{
+    color: #B2B935;
+    font-size: 14px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    text-transform: capitalize;
+    font-weight: 100 !important;
+}
+.vd-ab-team-description{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #9B9B9B;
+    font-size: 14px;
+}
+
+.vd-ab-reviews{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.vd-ab-title-views{
+    padding: 20px 0;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+   color: #B2B935;
+    font-size: 14px;
+}
+.vd-ab-reviews-content{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+}
+
+
+.vd-sv-top-left{
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+    color: #B2B935;
+    font-size: 16px;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 20px;
+}
+.vd-service-commercial{
+    margin-top: 50px;
+}
+.vd-service-tile-3{
+    font-weight: bold;
+    color: #B2B935;
+    font-size: 16px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+}
+.vd-service-surrounded{
+    margin-top: 20px;
+}
+.vd-service-description-3{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+
+}
+.vd-service-surrounded-3{
+    margin-top: 20px;
+}
+.vd-service-img-1{
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.vd-service-title-views{
+    font-weight: bold;
+    font-size: 16px;
+    color: #B2B935;
+    text-transform: uppercase;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+}
+.vd-serice-reviews-content{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+}
+.vd-serice-surrounded-service-orther{
+    margin-top: 20px;
+}
+.vd-project-item{
+    border: 1px solid #dddddd;
+    padding: 0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.vd-project-img{
+    width: 100%;
+    border-radius: 3px 3px 0 0 ;
+}
+.vd-project-surrounded{
+    padding: 20px;
+}
+.vd-project-title{
+    font-weight: bold;
+    color: #B2B935;
+    font-size: 16px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+}
+.vd-project-description{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+
+
+}
+.vd-projcet-info{
+    padding: 10px 0 0 0;
+    float: none;
+    display: block;
+}
+.vd-projet-content{
+    margin-top: 100px;
+}
+iframe, object, embed {
+    max-width: 100%;
+}
+#vd-content-contact{
+    margin: 50px auto;
+}
+.vd-submit-form{
+    background-color: #B2B935;
+    border: none;
+    outline: none;
+    padding: 15px
+}
+
+
+.btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success{
+    outline: none !important;
+    border: none !important;
+    background-color: #000000 !important;
+    pointer-events: none !important;
+}
+.btn-success.focus, .btn-success:focus{
+    outline: none !important;
+    border: none !important;
+    background-color: #000000 !important;
+    pointer-events: none !important;
+}
+
+.vd-video-title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #B2B935;
+    font-size: 16px;
+    font-family: "TrebuchetMS", "Open Sans", Arial, sans-serif;
+
+}
+.ifram-responsive {
+    width: 100%;
+    max-height: 400px;
+    height: 400px;
+}
+.vd-video-ifram-yotube{
+    margin-bottom: 30px;
+}
+.vd-video-content {
+
+}
