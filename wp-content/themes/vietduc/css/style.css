@@ -607,4 +607,15 @@ li.vd-li-parent > a {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
+.full-img{
+    width:100%;
+}
+.vd-tab-album {
+    margin: 20px 0;
+}
+.vd-tab-album li a {
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #ec3237;
+}
 
