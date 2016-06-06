@@ -4,10 +4,16 @@
     <div class="row">
         <div class="col-md-3">
             <?php
-            if (is_active_sidebar('contact-page')) {
-                dynamic_sidebar("contact-page");
-            }
+            $address = get_option('mylove_address');
+            $phone = get_option('mylove_phone');
+            $email = get_option('mylove_email');
             ?>
+            <P class="vd-contact-address" >ADDRESS:</P>
+            <P class="vd-contact-address-nd"><?php print $address; ?></P>
+            <P class="vd-contact-address">TELEPHONE:</P>
+            <P class="vd-contact-address-nd"><?php print $phone; ?></P>
+            <P class="vd-contact-address">EMAIL:</P>
+            <P class="vd-contact-address-nd"><?php print $email; ?></P>
 
         </div>
         <div class="col-md-9">
@@ -46,12 +52,28 @@
 </section>
 <footer>
     <div class="vd-footer container vd-container">
+        <?php
+        $copy_right = get_option('mylove_content');
+        $facebook = get_option('mylove_facebook');
+        $twitter = get_option('mylove_twitter');
+        $google = get_option('mylove_googleplus');
+
+        ?>
         <div class="row">
-            <?php
-            if (is_active_sidebar('footer-page')) {
-                dynamic_sidebar("footer-page");
-            }
-            ?>
+            <div class="col-md-6">
+                <P class="vd-footer-left"><?php print  $copy_right;?></P>
+            </div>
+            <div class="col-md-4 clear-all">
+                <form class="navbar-form navbar-left clear-all vd-mobile-add-l vd-mobile-add-r" role="search" action="<?php echo home_url( '/' ); ?>" method="get">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" name="s" id="s">
+                    </div>
+                    <button type="submit" class="btn btn-default vd-submit-footer">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-2 clear-all vd-h60">
+                <a href="<?php print $facebook; ?>" target="_blank"  class="vd-icon-face"></a><a target="_blank" href=" <?php print $twitter; ?>" class="vd-icon-twitter"></a><a target="_blank" href="<?php print $google; ?>" class="vd-icon-pinterest"></a>
+            </div>
         </div>
     </div>
 </footer>

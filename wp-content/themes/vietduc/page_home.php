@@ -36,7 +36,7 @@ get_header();
             $img = $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), "full")[0];
         ?>
         <div class="col-md-3 col-sm-6 col-xs-6">
-            <img class="vd-img-lock" src="<?php print get_bfithumb(220,180,$img); ?>" alt=""/>
+            <a href="<?php the_permalink() ;?>"><img class="vd-img-lock" src="<?php print get_bfithumb(220,180,$img); ?>" alt=""/></a>
             <h2 class="title-lock"><?php the_title(); ?></h2>
             <p class="vd-description"><?php print custom_excerpt(get_the_content(),20,''); ?></p>
             <a class="vd-info fancybox" href="#<?php echo $post->ID; ?>">more info</a>

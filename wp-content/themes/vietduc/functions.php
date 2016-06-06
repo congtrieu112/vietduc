@@ -2,6 +2,7 @@
 include"widget/widget.php";
 include "menu/menu.php";
 include"mails/mail.php";
+include "includes/taomenu.php";
 add_theme_support( 'post-thumbnails' );
 add_action('init', 'create_taxonomy');
 function create_taxonomy()
