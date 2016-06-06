@@ -39,13 +39,8 @@ get_header();
             <a href="<?php the_permalink() ;?>"><img class="vd-img-lock" src="<?php print get_bfithumb(220,180,$img); ?>" alt=""/></a>
             <h2 class="title-lock"><?php the_title(); ?></h2>
             <p class="vd-description"><?php print custom_excerpt(get_the_content(),20,''); ?></p>
-            <a class="vd-info fancybox" href="#<?php echo $post->ID; ?>">more info</a>
-            <div style="display: none;">
-                <div id="<?php echo $post->ID;  ?>">
-                    <h2 class="title-lock"><?php the_title(); ?></h2>
-                    <p class="vd-description"><?php the_content(); ?></p>
-                </div>
-            </div>
+            <a class="vd-info " href="<?php the_permalink(); ?>">Chi tiết</a>
+
         </div>
         <?php endwhile;wp_reset_postdata(); ?>
     </div>

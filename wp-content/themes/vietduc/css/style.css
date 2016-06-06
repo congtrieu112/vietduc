@@ -627,3 +627,21 @@ p.vd-phone-header {
     font-size: 20px;
     color: #ec3237;
 }
+.vd-resent-post img{
+    width: 100%;
+}
+.related-h1 a{
+    color: #000000;
+    font-size: 23px;
+    margin: 10px 0;
+    line-height: 26px !important;
+    display: block;
+
+}
+.related-p{
+    margin-bottom: 10px;
+}
+.content-full-vd img{
+    width: 100%;
+}
+

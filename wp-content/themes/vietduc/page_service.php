@@ -30,13 +30,8 @@
                     </p>
                     <p class="vd-project-description"><?php print custom_excerpt(get_the_content(),8,''); ?>
                     </p>
-                    <a class="vd-info vd-projcet-info fancybox" href="#<?php echo $post->ID; ?>">More info</a>
-                    <div style="display: none;">
-                        <div id="<?php echo $post->ID;  ?>">
-                            <h2 class="title-lock"><?php the_title(); ?></h2>
-                            <p class="vd-description"><?php the_content(); ?></p>
-                        </div>
-                    </div>
+                    <a class="vd-info vd-projcet-info " href="<?php print the_permalink(); ?>">Chi tiết</a>
+
                 </div>
 
             </div>

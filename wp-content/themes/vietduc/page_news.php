@@ -28,18 +28,13 @@
             <div class="col-md-6 vd-ab-top">
 
                 <div class="vd-ab-surrounded">
-                    <img class="vd-img-lock vd-ab-top-left" src="<?php print get_bfithumb(200,200,$img); ?>" alt=""/>
+                    <a href="<?php the_permalink(); ?>"><img class="vd-img-lock vd-ab-top-left" src="<?php print get_bfithumb(200,200,$img); ?>" alt=""/></a>
 
                     <h2 class="title-lock"><?php the_title(); ?></h2>
                     <p class="vd-description"><?php print custom_excerpt(get_the_content(),20,''); ?>
                     </p>
-                    <a class="vd-info fancybox" href="#<?php echo $post->ID; ?>">More info</a>
-                    <div style="display: none;">
-                        <div id="<?php echo $post->ID;  ?>">
-                            <h2 class="title-lock"><?php the_title(); ?></h2>
-                            <p class="vd-description"><?php the_content(); ?></p>
-                        </div>
-                    </div>
+                    <a class="vd-info " href="<?php the_permalink(); ?>">Chi tiết</a>
+
                 </div>
 
             </div>
