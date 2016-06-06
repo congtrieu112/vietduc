@@ -94,7 +94,7 @@
             </div><!--/.nav-collapse -->
             <p class="vd-phone-header"><i class="icon-line-1 glyphicon glyphicon-earphone"> </i>
                 &nbsp;
-                +84 982999928</p>
+                <?php print get_option('mylove_phone'); ?></p>
         </div>
     </nav>
     <?php //if(is_front_page()) require "slide.php"; ?>

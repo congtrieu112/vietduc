@@ -7,7 +7,7 @@ function sent_mail($option){
 	$phone = $option['phone'];
 
 
-$to =  get_option('admin_email');
+$to =  get_option('mylove_email');
 $subject = 'Thông tin Liên hệ';
 $body = '<table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse:collapse;border-style:solid;border-color:#cccccc;font-family:Arial,Helvetica,sans-serif;font-size:10pt">
 <tbody><tr>
